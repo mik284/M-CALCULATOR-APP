@@ -14,7 +14,7 @@ function Layout(props) {
       if (input !== "") {
         let res = "";
         try {
-          res = eval(input);
+          res = eval(input); // Evaluates js code rep as a string and returns its completion value Note: not encouraged
         } catch (err) {
           setResult("Math error");
         }
